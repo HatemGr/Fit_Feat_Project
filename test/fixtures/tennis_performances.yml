@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  user: one
+  frequency: 1
+  experience: 1
+  rank: MyString
+
+two:
+  user: two
+  frequency: 1
+  experience: 1
+  rank: MyString

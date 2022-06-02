@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  user_a: one
+  user_b: one
+  status: MyString
+  coaching: false
+
+two:
+  user_a: two
+  user_b: two
+  status: MyString
+  coaching: false
