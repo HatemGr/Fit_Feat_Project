@@ -62,23 +62,23 @@ ActiveRecord::Schema.define(version: 2022_06_02_172046) do
     t.float "longitude"
     t.float "latitude"
     t.bigint "city_id"
-    t.integer "tennis_frequency"
-    t.integer "workout_frequency"
-    t.integer "running_frequency"
-    t.integer "climbing_frequency"
-    t.integer "futsal_frequency"
-    t.integer "tennis_experience"
-    t.integer "workout_experience"
-    t.integer "running_experience"
-    t.integer "climbing_experience"
-    t.integer "futsal_experience"
+    t.integer "tennis_frequency", default: 0
+    t.integer "workout_frequency", default: 0
+    t.integer "running_frequency", default: 0
+    t.integer "climbing_frequency", default: 0
+    t.integer "futsal_frequency", default: 0
+    t.integer "tennis_experience", default: 0
+    t.integer "workout_experience", default: 0
+    t.integer "running_experience", default: 0
+    t.integer "climbing_experience", default: 0
+    t.integer "futsal_experience", default: 0
     t.string "tennis_rank"
-    t.integer "climbing_level"
-    t.integer "climbing_block_color"
-    t.integer "workout_benchpress_weight"
-    t.integer "workout_squat_weight"
-    t.integer "running_distance"
-    t.integer "running_speed"
+    t.integer "climbing_level", default: 0
+    t.string "climbing_block_color"
+    t.integer "workout_benchpress_weight", default: 0
+    t.integer "workout_squat_weight", default: 0
+    t.integer "running_distance", default: 0
+    t.integer "running_speed", default: 0
     t.index ["city_id"], name: "index_users_on_city_id"
     t.index ["email"], name: "index_users_on_email", unique: true
     t.index ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true
