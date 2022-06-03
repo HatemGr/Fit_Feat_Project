@@ -11,6 +11,7 @@ Sport.destroy_all
 User.destroy_all
 SportUser.destroy_all
 Suggestion.destroy_all
+Event.all.destroy_all
 
 
 City.create!(name:"Lille")
@@ -79,4 +80,8 @@ end
 
 40.times do
     Suggestion.create(partnera: User.all.sample, partnerb: User.all.sample)
+end
+
+10.times do
+    Event.create(title: Faker::Sports::Football.competition, admin: User.all.sample, city: City.all.sample, sport: Sport.all.sample)
 end
