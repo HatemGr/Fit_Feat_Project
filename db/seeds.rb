@@ -70,3 +70,7 @@ User.all.each do |user|
         SportUser.create!(user: user, sport: sport)
     end
 end
+
+40.times do
+    Suggestion.create(partnera: User.all.sample, partnerb: User.all.sample)
+end
