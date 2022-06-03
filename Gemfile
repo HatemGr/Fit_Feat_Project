@@ -18,7 +18,7 @@ gem 'uglifier', '>= 1.3.0'
 gem 'faker'
 gem 'table_print'
 gem 'devise'
-gem 'mapbox'
+gem 'mapbox-rails'
 gem 'geocoder'
 
 gem 'jquery-rails'

@@ -10,6 +10,7 @@ City.destroy_all
 Sport.destroy_all
 User.destroy_all
 SportUser.destroy_all
+Suggestion.destroy_all
 
 
 City.create!(name:"Lille")
@@ -66,8 +67,13 @@ end
 
 
 User.all.each do |user|
-    Sport.all.each do |sport|
-        SportUser.create!(user: user, sport: sport)
+    rand(1..5).times do
+        loop do
+            sport = SportUser.new(user: user, sport: Sport.all.sample)
+            if sport.save
+                break
+            end
+        end
     end
 end
 
