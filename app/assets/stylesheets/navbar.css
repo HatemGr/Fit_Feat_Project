@@ -80,3 +80,13 @@
    font-family: var(--black-font);
    font-size: 1.5rem;
 }
+
+.span-indicator{
+   width:6px; 
+   height:58px; 
+   background-color:rgb(var(--purple)); 
+   position:absolute; 
+   top:0; 
+   left:-37px; 
+   border-radius: 4px; 
+}
