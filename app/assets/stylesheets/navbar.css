@@ -27,7 +27,9 @@
 }
 
 .menu a[aria-selected]{
-   color: rgb(var(--purple))
+   color: rgb(var(--purple));
+   background-color: rgba(var(--purple), 0.05);
+   position:relative
 }
 
 .indicator{

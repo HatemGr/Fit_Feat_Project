@@ -1,4 +1,4 @@
-<%= link_to team_index_path, style:"background-color: rgba(var(--purple), 0.05); position:relative", 'aria-selected' => true  do %>
+<%= link_to team_index_path, 'aria-selected' => true  do %>
    <i class="fa-solid fa-user-group"></i> Feat Friends
-   <span class="span-indicator"> </span>
+   <%= render "layouts/tabs/span_indicator" %>
 <% end%>
