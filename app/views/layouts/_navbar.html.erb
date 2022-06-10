@@ -6,21 +6,18 @@
       </div>
       <div class="separate" style="margin-left: 37px"></div>
       <nav class="menu" role="tablist">
-         <a
-            href="#"
-            role="tab"
-            style="background-color: rgba(var(--purple), 0.05)"
-            aria-selected="true"
-         >
-            <i class="fa-solid fa-house"></i> Home</a
-         >
-         <a href="#" role="tab">
+      <%= link_to home_path, style:"background-color: rgba(var(--purple), 0.05)", 'aria-selected' => true do %>
+      <i class='fa-solid fa-home'></i> Home 
+      <% end%>
+      
+       
+         <a role="tab">
             <i class="fa-solid fa-user-group"></i> Feat Friends</a
          >
-         <a href="#" role="tab">
+         <a  role="tab">
             <i class="fa-solid fa-comment-dots"></i> Messages</a
          >
-         <a href="#" role="tab">
+         <a  role="tab">
             <i class="fa-solid fa-calendar-days"></i> Events</a
          >
       </nav>
