@@ -2,8 +2,11 @@
 
 <h2>Description</h2>
 <p><%=@user.description%></p>
-<p>Né(e) le <%= @user.birthdate.strftime('%d/%m/%Y')%> </p>
-
+<%if @user.birthdate%>
+    <p>Né(e) le <%= @user.birthdate.strftime('%d/%m/%Y')%> </p>
+<%else%>
+    <p class="empty-data">Pas de date de naissance renseignée</p>
+<%end%>
 <h2>Partie Sport</h2>
 <div class="perf-container"> <%= render partial: 'running_perf', locals: {user: @user}%> </div>
 <div class="perf-container"> <%= render partial: 'workout_perf', locals: {user: @user}%> </div>
