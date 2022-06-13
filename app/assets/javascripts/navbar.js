@@ -1,5 +1,4 @@
 const menu = document.querySelector(".menu");
-console.log(menu);
 
 const menuItems = Array.from(menu.querySelectorAll("a"));
 let activeItem = menu.querySelector("[aria-selected]");

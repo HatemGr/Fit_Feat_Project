@@ -1,0 +1,22 @@
+<h4>Workout Performances</h4>
+<%=form_for @user.workout_performance, url: user_workout_performance_path(@user,@user.workout_performance), method: :patch do |f|%>
+<div class="field">
+  <%= f.label :workout_experience %><br />
+  <%= f.number_field :workout_experience, autofocus: true %>
+</div>
+<div class="field">
+  <%= f.label :workout_frequency %><br />
+  <%= f.number_field :workout_frequency, autofocus: true %>
+</div>
+<div class="field">
+  <%= f.label :workout_benchpress_weight %><br />
+  <%= f.number_field :workout_benchpress_weight, autofocus: true %>
+</div>
+<div class="field">
+  <%= f.label :workout_squat_weight %><br />
+  <%= f.number_field :workout_squat_weight, autofocus: true %>
+</div>
+<div class="actions">
+  <%= f.submit('Soumettre') %>
+</div>
+<%end%>

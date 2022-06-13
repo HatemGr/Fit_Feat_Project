@@ -1,0 +1,9 @@
+<% if user.suggestions%>
+<ul>
+  <% user.suggestion_list.each do |suggestion|%>
+  <li> <%= link_to "#{suggestion.full_name} ", user_path(suggestion)%> </li>
+  <%end%>
+</ul>
+<%else%>
+<h3> Pas encore de suggestion, ça ne saurait tarder...</h3>
+<%end%>

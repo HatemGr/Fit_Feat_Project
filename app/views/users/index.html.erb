@@ -1,0 +1,9 @@
+<h1>Ici Index Users</h1>
+
+<div class="users-recap">
+  <%= render partial: 'users_recap', locals: {users: @users}%>
+</div>
+
+<div class="all-users">
+    <%= render partial: 'users_cards', locals: {users: @users}%>
+</div>

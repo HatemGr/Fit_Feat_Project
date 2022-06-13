@@ -1,0 +1,18 @@
+<h4>Tennis Performances</h4>
+<%=form_for @user.tennis_performance, url: user_tennis_performance_path(@user,@user.tennis_performance), method: :patch do |f|%>
+<div class="field">
+  <%= f.label :tennis_experience %><br />
+  <%= f.number_field :tennis_experience, autofocus: true %>
+</div>
+<div class="field">
+  <%= f.label :tennis_frequency %><br />
+  <%= f.number_field :tennis_frequency, autofocus: true %>
+</div>
+<div class="field">
+  <%= f.label :tennis_rank %><br />
+  <%= f.text_field :tennis_rank, autofocus: true %>
+</div>
+<div class="actions">
+  <%= f.submit('Soumettre') %>
+</div>
+<%end%>

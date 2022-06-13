@@ -1,0 +1,14 @@
+<h4>Futsal Performences</h4>
+<%=form_for @user.futsal_performance, url: user_futsal_performance_path(@user,@user.futsal_performance), method: :patch do |f|%>
+<div class="field">
+  <%= f.label :futsal_experience %><br />
+  <%= f.number_field :futsal_experience, autofocus: true %>
+</div>
+<div class="field">
+  <%= f.label :futsal_frequency %><br />
+  <%= f.number_field :futsal_frequency, autofocus: true %>
+</div>
+<div class="actions">
+  <%= f.submit('Soumettre') %>
+</div>
+<%end%>

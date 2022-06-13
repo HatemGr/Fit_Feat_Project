@@ -1,0 +1,22 @@
+<h2>Climbing Performences</h2>
+<%=form_for @user.climbing_performance, url: user_climbing_performance_path(@user,@user.climbing_performance), method: :patch do |f|%>
+<div class="field">
+  <%= f.label :climbing_experience %><br />
+  <%= f.number_field :climbing_experience, autofocus: true %>
+</div>
+<div class="field">
+  <%= f.label :climbing_frequency %><br />
+  <%= f.number_field :climbing_frequency, autofocus: true %>
+</div>
+<div class="field">
+  <%= f.label :climbing_level %><br />
+  <%= f.number_field :climbing_level, autofocus: true %>
+</div>
+<div class="field">
+  <%= f.label :climbing_block_color %><br />
+  <%= f.text_field :climbing_block_color, autofocus: true %>
+</div>
+<div class="actions">
+  <%= f.submit('Soumettre') %>
+</div>
+<%end%>

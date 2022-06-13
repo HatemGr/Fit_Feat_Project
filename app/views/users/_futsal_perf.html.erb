@@ -1,0 +1,7 @@
+<%if user.futsal_performance %>
+<p>Il fait du futsal</p>
+<ul>
+  <li> Experience : <%= user.futsal_performance.futsal_experience %> ans </li>
+  <li> Frequence : <%= user.futsal_performance.futsal_frequency %> seances par semaines </li>
+</ul>
+<%end%>

@@ -1,0 +1,9 @@
+<%if user.workout_performance %>
+<p>Il fait du workout</p>
+<ul>
+  <li> Experience : <%= user.workout_performance.workout_experience %> ans </li>
+  <li> Frequence : <%= user.workout_performance.workout_frequency %> seances par semaines </li>
+  <li> Poids au benchpress :   <%= user.workout_performance.workout_benchpress_weight %> kg</li>
+  <li> Poids au squats :  <%= user.workout_performance.workout_squat_weight %> kg</li>
+</ul>
+<%end%>
