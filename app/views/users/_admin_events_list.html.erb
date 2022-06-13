@@ -1,0 +1,5 @@
+<ul>
+<%user.admin_events.each do |event|%>
+<li> <%= link_to "#{event.title}", event_path(event)%> avec <%= event.users.size %> participants </li>
+<%end%>
+</ul>

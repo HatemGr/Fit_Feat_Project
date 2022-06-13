@@ -1,0 +1,22 @@
+<h4>Running Performances</h4>
+<%=form_for @user.running_performance, url: user_running_performance_path(@user,@user.running_performance), method: :patch do |f|%>
+<div class="field">
+  <%= f.label :running_experience %><br />
+  <%= f.number_field :running_experience, autofocus: true %>
+</div>
+<div class="field">
+  <%= f.label :running_frequency %><br />
+  <%= f.number_field :running_frequency, autofocus: true %>
+</div>
+<div class="field">
+  <%= f.label :running_distance %><br />
+  <%= f.number_field :running_distance, autofocus: true %>
+</div>
+<div class="field">
+  <%= f.label :running_speed %><br />
+  <%= f.number_field :running_speed, autofocus: true %>
+</div>
+<div class="actions">
+  <%= f.submit('Soumettre') %>
+</div>
+<%end%>

@@ -1,0 +1,9 @@
+<%if user.climbing_performance %>
+<p>Il fait de l'escalade</p>
+<ul>
+  <li> Experience : <%= user.climbing_performance.climbing_experience %> ans </li>
+  <li> Frequence : <%= user.climbing_performance.climbing_frequency %> seances par semaines </li>
+  <li> Il a un niveau:   <%= user.climbing_performance.climbing_level %></li>
+  <li> Il parcours des pistes :  <%= user.climbing_performance.climbing_block_color %></li>
+</ul>
+<%end%>

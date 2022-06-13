@@ -15,25 +15,7 @@ gem 'sass-rails', '~> 5.0'
 gem 'uglifier', '>= 1.3.0'
 # See https://github.com/rails/execjs#readme for more supported runtimes
 # gem 'mini_racer', platforms: :ruby
-gem 'faker'
-gem 'table_print'
-gem 'devise'
-gem 'mapbox-rails'
-gem 'geocoder'
 
-gem 'jquery-rails'
-gem "font-awesome-rails"
-
-
-#emails
-gem 'mailjet', :git => 'https://github.com/mailjet/mailjet-gem.git'
-gem 'dotenv-rails'
-# paiement
-gem 'stripe'
-# gem "animate-rails"
-# gem "animate.css-rails"
-gem "aws-sdk-s3", require: false
-# gem "responders"
 # Use CoffeeScript for .coffee assets and views
 gem 'coffee-rails', '~> 4.2'
 # Turbolinks makes navigating your web application faster. Read more: https://github.com/turbolinks/turbolinks
@@ -79,3 +61,19 @@ end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
+
+##OTHERS
+gem 'faker'
+gem 'table_print'
+gem 'devise'
+gem 'mapbox-rails'
+gem 'geocoder'
+gem 'jquery-rails'
+gem "font-awesome-rails"
+gem 'dotenv-rails'
+gem 'json', '~> 2.6', '>= 2.6.2'
+gem "aws-sdk-s3", require: false
+#emails
+gem 'mailjet', :git => 'https://github.com/mailjet/mailjet-gem.git'
+# paiement
+gem 'stripe'

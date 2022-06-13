@@ -1,8 +1,29 @@
 <h2>Profile - Edition les informations du User</h2>
 
 
-<h3>Description</h3>
+<h3>Infos personnelles</h3>
+<%= render partial: 'profil_form', locals: {user: @user}%>
+
+<h3> Infos de compte </h3>
+<%= link_to 'Modifier email ou mot de passe', edit_user_registration_path %>
 
 <h3>Performances</h3>
+<%if @user.running_performance%>
+<div class="perf-container"><%= render partial: 'running_perf_form', locals: {user: @user}%></div>
+<%end%>
+<%if @user.workout_performance%>
+<div class="perf-container"><%= render partial: 'workout_perf_form', locals: {user: @user}%></div>
+<%end%>
+<%if @user.climbing_performance%>
+<div class="perf-container"><%= render partial: 'climbing_perf_form', locals: {user: @user}%></div>
+<%end%>
+<%if @user.tennis_performance%>
+<div class="perf-container"><%= render partial: 'tennis_perf_form', locals: {user: @user} %></div>
+<%end%>
+<%if @user.futsal_performance%>
+<div class="perf-container"><%= render partial: 'futsal_perf_form', locals: {user: @user}%></div>
+<%end%>
 
 <h3>Events administration</h3>
+
+<div class="admin-event-list"><%= render partial: 'admin_events_list', locals: {user: @user}%></div>

@@ -1,5 +1,21 @@
-<h2>Dashboard du User</h2>
+<h1>Dashboard de <%= @user.full_name %></h1>
 
-<h3>Amis</h3>
+<h2>Description</h2>
+<p><%=@user.description%></p>
+<p>Né(e) le <%= @user.birthdate.strftime('%d/%m/%Y')%> </p>
 
-<h3>Events</h3>
+<h2>Partie Sport</h2>
+<div class="perf-container"> <%= render partial: 'running_perf', locals: {user: @user}%> </div>
+<div class="perf-container"> <%= render partial: 'workout_perf', locals: {user: @user}%> </div>
+<div class="perf-container"> <%= render partial: 'climbing_perf', locals: {user: @user}%> </div>
+<div class="perf-container"> <%= render partial: 'tennis_perf', locals: {user: @user}%> </div>
+<div class="perf-container"> <%= render partial: 'futsal_perf', locals: {user: @user}%> </div>
+
+<h2>Amis</h2>
+<div class="suggestion-container"> <%= render partial: 'suggestion_user', locals: {user: @user}%> </div>
+
+<h2>Events crées par <%= @user.first_name%></h2>
+<div class="admin-event-list"> <%= render partial: 'admin_event_list', locals: {user: @user}%>  </div>
+
+<h2>Liens</h2>
+<%= link_to 'Editer le profil', edit_user_path(@user) %>
